@@ -3,7 +3,7 @@ from mptt.models import MPTTModel, TreeForeignKey
 # Create your models here.
 
 
-class MenuItem(MPTTModel):
+class main_menu(MPTTModel):
     name = models.CharField(max_length=100, unique=True)
     url = models.CharField('Сcылка', max_length=255)
     position = models.PositiveIntegerField('Позиция', default=1)
